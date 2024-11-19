@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 8px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+}
+
+body[scroll]::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
